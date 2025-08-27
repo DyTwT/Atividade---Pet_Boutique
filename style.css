@@ -22,6 +22,12 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.logo {
+  display: flex;
+  align-items: center; /* centraliza imagem e texto na vertical */
+  gap: 8px; /* espaço entre a imagem e o texto */
+}
+
 .logo h1 {
   margin: 0;
   color: #663399;
@@ -30,14 +36,14 @@ body {
 
 .logo p {
   margin: 5px 0 0 0;
-  color: #666;
+  color: #290947;
   font-size: 0.9em;
 }
 
 /* Hero Section */
 .hero {
   height: 500px;
-  background: url(imagens/banner-topo.jpg) center center;
+  background: url(banner-topo.jpg) center center;
   background-size: cover;
   position: relative;
 }
@@ -173,7 +179,7 @@ body {
 .brands h3 {
   font-size: 2em;
   margin: 0 0 40px 0;
-  color: #333;
+  color: #400b72;
 }
 
 .brands-grid {
@@ -203,6 +209,13 @@ body {
 .cta h3 {
   font-size: 2em;
   margin: 0 0 30px 0;
+  font-family:serif;
+  color: white;
+}
+
+.cta h3 .destaque {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Location Section */
@@ -214,7 +227,7 @@ body {
 .location h3 {
   font-size: 2em;
   margin: 0 0 20px 0;
-  color: #333;
+  color: #400b72;
 }
 
 .location p {

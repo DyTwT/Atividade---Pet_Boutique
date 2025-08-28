@@ -110,6 +110,7 @@ body {
   margin: 0 0 25px 0;
   padding: 0 0 0 20px;
   position: relative;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
 
@@ -139,11 +140,17 @@ body {
 
 .gallery-grid img {
   width: 200px;
-  height: 150px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  height: 300px;
+  border-radius: 20px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* sombra parecida com a da imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transição suave */
 }
+
+.gallery-grid img:hover {
+  transform: scale(1.03); /* leve aumento ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* sombra mais intensa no hover */
+}
+
 
 /* About Section */
 .about {
@@ -156,6 +163,13 @@ body {
 .about h3 {
   font-size: 2em;
   margin: 0 0 30px 0;
+  font-family:serif;
+  color: white;
+}
+
+.about h3 span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .social-icons a {
@@ -183,19 +197,16 @@ body {
 }
 
 .brands-grid {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* espaço entre as imagens */
 }
 
-.brand-logo {
-  display: inline-block;
-  padding: 15px 25px;
+.brands-grid img {
+  max-width: 150px;
   margin: 10px;
-  background: white;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-weight: bold;
-  color: #666;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  object-fit: contain; /* garante que a imagem não fique esticada */
 }
 
 /* CTA Section */
